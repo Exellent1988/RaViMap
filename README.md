@@ -22,18 +22,13 @@ fi'<br>
 nano .bash_aliases<br>
 add <br>
 <code>
-#Enter openFrameworks folder just by typing "oF"
   alias oF='cd /home/pi/openFramework'
-  #Run project generator by typing projectgenerator
   alias projectgenerator='oF && ./apps/projectGenerator/commandLine/bin/projectGenerator'
   # Read temperature of rPi
   alias temp='/opt/vc/bin/vcgencmd measure_temp'
-  # Read screen properties
-  alias screen='/opt/vc/bin/tvservice -s'
-</code><br>
+ </code><br>
 nano .bash_profile<br>
 <code>
-#Setup openFrameworks variables
 export MAKEFLAGS=-j4 PLATFORM_ARCH=armv7l PLATFORM_VARIANT=rpi2
 </code><br>
 mkdir openFramework<br>
