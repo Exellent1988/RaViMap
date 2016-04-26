@@ -8,7 +8,7 @@ tar xzfv poco-1.7.2-all.tar.gz<br>
 cd poco-1.7.2-all/<br>
 ./configure --omit=Data/ODBC,Data/MySQL<br>
 make -j4<br>
-sudo gmake -s install<br>
+sudo make -s install<br>
 
 ##openframework
 wget http://openframeworks.cc/versions/nightly/of_latest_linuxarmv7l_nightly.tar.gz<br>
