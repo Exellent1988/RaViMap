@@ -37,4 +37,8 @@ cd ~/openFramework/scripts/linux/debian<br>
 ./install_dependencies.sh<br>
 ./install_codecs.sh<br>
 cd ~<br>
+export MAKEFLAGS=-j4 PLATFORM_ARCH=armv7l PLATFORM_VARIANT=rpi2 <br>
 make Release -C /home/pi/openFramework/libs/openFrameworksCompiled/project<br>
+cd ~/openFramework/scripts/linux/<br>
+nano buildallRPIexamples.sh<br>
+change <code></code><br>to<br><code></code><br>
