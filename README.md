@@ -1,40 +1,41 @@
-# RasViMap
-#INSTALL NOTES
-## INSTALL OLA
-## INSTALL node.js
-## INSTALL python2.7
-## PI-Monitor
+# RasViMap:
+	INSTALL NOTES
+	INSTALL OLA
+	INSTALL node.js
+	INSTALL python2.7
+	PI-Monitor
 
 
-#TODO
--installscript
--WLAN-Script
--Autostart-scripts
-	-Chromium/(better alternative) +kioskmode +presentationmode
-	-STATUS-outputs (own site/ pimonitor plugin?)
+##TODOS
 
+###PI-WISE:
+	-[ ] installscript
+	-[ ] WLAN-Script
+	-[ ] Autostart-scripts
+	-[ ] Chromium/(better alternative) +kioskmode +presentationmode
+	-[ ] STATUS-outputs (own site/ pimonitor plugin?)
 
--DMX-read 
-	-DMX(max 10 channels):
-	-videoauswahl
-	-dimmer
-	-rgb /farbkorrektur
-	-shutter
-	-gobos/masken/rahmen/effekte
-	-speed/splay/stop
-	-scale
-	-x / y Transform 
-	(presets für Position?)
+##FUNCTIONS:
+	-[ ] DMX-read:
+		-[ ] DMX(max 10 channels):
+		-[ ] videoauswahl
+		-[ ] dimmer
+		-[ ] rgb /farbkorrektur
+		-[ ] shutter
+		-[ ] gobos/masken/rahmen/effekte
+		-[ ] speed/splay/stop
+		-[ ] scale
+		-[ ] x / y Transform (presets für Position?)
 
--WEBSERVER
-	-Admin-Backend
-	-Templates
-	-autoconverter
-	-auto source-list creator
+	-[ ] WEBSERVER:
+		-[ ] Admin-Backend
+		-[ ] Templates
+		-[ ] autoconverter
+		-[ ] auto source-list creator
 
 ##secondly
--2x16 DISPLAY Integration
--ArtNet-Integration
+	-[	] 2x16 DISPLAY Integration
+	-[	] ArtNet-Integration
 
 
 
@@ -53,8 +54,8 @@
 
 
 
-#THE IDEA
-##FUNCTIONS:
+##THE IDEA
+###FUNCTIONS:
 	trasformation
 	warper
 	playlist
@@ -65,7 +66,7 @@
 
 
 Betriebsmodi;
-Single(DMX)
-Pro(ArtNet)
-Multi(ArtNet)
+	-	Single(DMX)
+	-	Pro(ArtNet)
+	-	Multi(ArtNet)
 
