@@ -1,0 +1,13 @@
+{
+  "name": "PI-DMX-Socket",
+  "version": "0.0.5",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+   "express": "",
+   "socket.io": "",
+   "python-shell":""
+  }
+}

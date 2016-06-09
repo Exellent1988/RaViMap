@@ -15,8 +15,15 @@ sudo /usr/share/rpimonitor/scripts/updatePackagesStatus.pl
 
 #OLA DEPENDENCIES
 sudo apt-get update
-sudo apt-get install -y libcppunit-dev libcppunit-1.13-0 uuid-dev pkg-config libncurses5-dev libtool autoconf automake g++ libmicrohttpd-dev \
+sudo apt-get install -y -force-yes libcppunit-dev libcppunit-1.13-0 uuid-dev pkg-config libncurses5-dev libtool autoconf automake g++ libmicrohttpd-dev \
  libmicrohttpd10 protobuf-compiler libprotobuf-lite9 python-protobuf libprotobuf-dev libprotoc-dev zlib1g-dev bison flex make libftdi-dev  libftdi1 libusb-1.0-0-dev liblo-dev libavahi-client-dev
+
+
+#Server dependencies
+sudo apt -y -force-yes install python python-pip python-serial
+sudo pip install SocketIO-Client
+sudo pip install git+https://github.com/dpallot/simple-websocket-server.git
+
 
  #make OLA
  git clone https://github.com/OpenLightingProject/ola.git ola
@@ -27,3 +34,4 @@ make -j4 all
 make -j4 check
 sudo make -j4 install
 sudo ldconfig
+
