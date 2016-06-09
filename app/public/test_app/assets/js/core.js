@@ -19,7 +19,7 @@ function initialize(){
 
 
 socket.on('channels',function(channels){
-	for(i=1;i<=2;i++){
+	for(i=1;i<=10;i++){
 		var string1 = 'channel_' ;
 	    var str2 = i.toString();
 	    var channelid = string1+str2;

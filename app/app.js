@@ -71,9 +71,9 @@ setInterval( function(){
 
 	
 
-//RUN PYTHON scripts:
-//	console.log('loading python client');
-//	PythonShell.run('../Scripts/python/client.py', function (err) {
- // if (err) throw err;
+RUN PYTHON scripts:
+	console.log('loading python client');
+	PythonShell.run('../Scripts/python/client.py', function (err) {
+    if (err) throw err;
   
- //}); 
+ }); 
