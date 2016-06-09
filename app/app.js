@@ -65,7 +65,7 @@ io.sockets.on("connection",function(socket){
 
 setInterval( function(){
 		socket.emit('get_channel_values');
-	},250);
+	},50);
 
 })
 
