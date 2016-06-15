@@ -31,8 +31,8 @@ socket.on('channels',function(channels){
 	    var channelid = string1+str2;
 		document.getElementById(channelid).innerHTML = channels.all[(i-1)];
 		}
-		document.getElementById('test_img').style.left = ((channels.all[0]/255)*x)-424 + "px";
-		document.getElementById('test_img').style.top = ((channels.all[1]/255)*y)-445 + "px";
+		document.getElementById('test_img').style.left = ((channels.all[0]/255)*x)-(document.getElementById('test_img').width/2) + "px";
+		document.getElementById('test_img').style.top = ((channels.all[1]/255)*y)-(document.getElementById('test_img').height/2) + "px";
 		console.log('x: '+x);
 		console.log('y: '+y);
 
