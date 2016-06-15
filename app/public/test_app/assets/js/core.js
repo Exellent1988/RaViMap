@@ -41,7 +41,7 @@ socket.on('channels',function(channels){
 }
 
 function rotation(id,deg){
-    var div = document.getElementById(id),
+    var div = document.getElementById(id);
        
     div.style.webkitTransform = 'rotate('+deg+'deg)'; 
     div.style.mozTransform    = 'rotate('+deg+'deg)'; 
