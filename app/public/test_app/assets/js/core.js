@@ -1,6 +1,12 @@
 function initialize(){
 	var socket = io.connect();
 
+	var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    x = w.innerWidth || e.clientWidth || g.clientWidth,
+    y = w.innerHeight|| e.clientHeight|| g.clientHeight;
 
 
 	
@@ -25,7 +31,12 @@ socket.on('channels',function(channels){
 	    var channelid = string1+str2;
 		document.getElementById(channelid).innerHTML = channels.all[(i-1)];
 		}
+		document.getElementById('#test_img').style.left = (channels.all(1)/255)*x
+		document.getElementById('#test_img').style.top = (channels.all(1)/255)*y
+
 });
+
+
 
 }
 
