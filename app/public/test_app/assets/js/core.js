@@ -33,8 +33,8 @@ socket.on('channels',function(channels){
 		}
 		document.getElementById('test_img').style.left = ((channels.all[0]/255)*x)+ "px";
 		document.getElementById('test_img').style.top = ((channels.all[1]/255)*y)+ "px";
-		console.log('x: 'x);
-		console.log('y: 'y);
+		console.log('x: '+x);
+		console.log('y: '+y);
 
 });
 
