@@ -35,7 +35,11 @@ socket.on('channels',function(channels){
 		document.getElementById('test_img').style.top = ((channels.all[1]/255.00)*y)(document.getElementById('test_img').height/2) + "px";
 		rotation('test_img',(channels.all[2]/255.00)*36);
 		document.getElementById('test_img').style.width = ((channels.all[3]/255.00)*4)*425;
-});		document.getElementById('test_img').style.height = ((channels.all[4]/255.00)*4)*445;
+		document.getElementById('test_img').style.height = ((channels.all[4]/255.00)*4)*445;
+
+
+
+});
 
 
 }
