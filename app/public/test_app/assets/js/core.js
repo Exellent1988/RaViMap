@@ -31,11 +31,11 @@ socket.on('channels',function(channels){
 	    var channelid = string1+str2;
 		document.getElementById(channelid).innerHTML = channels.all[(i-1)];
 		}
-		document.getElementById('test_img').style.left = ((channels.all[0]/255)*x)-(document.getElementById('test_img').width/2) + "px";
-		document.getElementById('test_img').style.top = ((channels.all[1]/255)*y)-(document.getElementById('test_img').height/2) + "px";
-		rotation('test_img',(channels.all[2]/255)*360);
-		
-});
+		document.getElementById('test_img').style.left = ((channels.all[0]/255.00*x)-(document.getElementById('test_img').width/2) + "px";
+		document.getElementById('test_img').style.top = ((channels.all[1]/255.00)*y)(document.getElementById('test_img').height/2) + "px";
+		rotation('test_img',(channels.all[2]/255.00)*36);
+		document.getElementById('test_img').style.width = ((channels.all[3]/255.00)*4)*425
+});		document.getElementById('test_img').style.height = ((channels.all[4]/255.00)*4)*445
 
 
 }
