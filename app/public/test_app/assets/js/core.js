@@ -33,13 +33,23 @@ socket.on('channels',function(channels){
 		}
 		document.getElementById('test_img').style.left = ((channels.all[0]/255)*x)-(document.getElementById('test_img').width/2) + "px";
 		document.getElementById('test_img').style.top = ((channels.all[1]/255)*y)-(document.getElementById('test_img').height/2) + "px";
-		console.log('x: '+x);
-		console.log('y: '+y);
-
+		rotation('test_img',(channels.all[2]/255)*360);
+		
 });
 
 
-
 }
+
+function rotation(id,deg){
+    var div = document.getElementById(id),
+        deg = rotated ? 0 : 66;
+
+    div.style.webkitTransform = 'rotate('+deg+'deg)'; 
+    div.style.mozTransform    = 'rotate('+deg+'deg)'; 
+    div.style.msTransform     = 'rotate('+deg+'deg)'; 
+    div.style.oTransform      = 'rotate('+deg+'deg)'; 
+    div.style.transform       = 'rotate('+deg+'deg)'; 
+}
+
 
 
